@@ -33,11 +33,25 @@ resources = {
     "coffee": 100
 }
 
+
+
 # Functions
 
+def show_report():
+    print(f"Water : {resources['water']}ml\nMilk: {resources['milk']}ml\nCoffee: {resources['coffee']}g\nMoney: ${profit}")
+
+# Loop
 while(True):
     choice = input("What would you like? (espresso/latte/cappuccino):")
-    if choice == "off":
+    if choice == "report":
+        show_report()
+    elif choice == "espresso":
+        print()
+    elif choice == "latte":
+        print()
+    elif choice == "cappuccino":
+        print()
+    elif choice == "off":
         break
 
 print("The machine is now off.")
